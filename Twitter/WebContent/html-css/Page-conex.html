@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tweeto - Bienvenue</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="JavaScript/Inscription.js"></script>
+    <script type="text/javascript" src="JavaScript/login.js"></script>
+    <script type="text/javascript" src="JavaScript/comment.js"></script>
+	<script type="text/javascript" src="JavaScript/main.js"></script>
+    <link href="Page-conex.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="body" onload="javascript:main2()">
+    <div id="logo">
+      <img src="logotweeto.png"/>
+    </div>
+    <div id="conex">
+      <h1> Ouvrir une session </h1>
+      <form id="connexion" onSubmit="return verifier()" action=" " method="get">
+      
+    <div id='msg_err_connection'></div>  
+	<div class="ids">
+	  <span>Login</span>
+	  <input type="text" name="login"/>
+	</div>
+	<div class="ids">
+	  <span>Mot de passe</span>
+	  <input type="password" name="pass"/>
+	</div>
+	
+	<div class="ids">
+	  <a OnClick="envoieMotDePasse()">Mot De Passe Oublie</a>
+	</div>
+	
+	<div class="buttons">
+	  <button id="buttonSubmite" type="submit" value="Connexion">Connexion</button>
+	  <button type="button" value="AnnulerSaisie" OnClick="annule(this)">Annuler</button>
+	</div>
+      </form>
+    </div>
+
+    <div id="main">
+      <h1> Creer un compte </h1>
+      <form id="inscription" onSubmit="return inscriptions(this)" action="javascript:(function(){return;}()"method="get">
+ <div id='msg_err'></div>
+	<div class="pn">
+	  <span>Prenom</span>
+	  <input id ="pre" type="text" name="prenom"/>
+	</div>
+
+	<div class="pn">
+	  <span>Nom</span>
+	  <input id="no" type="text" name="nom"/>
+	</div> 
+	<div class="ids2">
+	  <span>Login</span>
+	  <input id="lo" type="text" name="login"/>
+	</div>
+
+	<div class="ids2">
+	  <span>Mot de passe</span>
+	  <input id="motdePass" type="password" name="pass"/>
+	</div>
+
+	<div class="ids2">
+	  <span>Retapez</span>
+	  <input id="motdePass2" type="password" name="pass2"/>
+	</div>
+	
+	<div class="ids2">
+	  <span>E-mail</span>
+	  <input id="email" type="text" name="mail"/>
+	</div>
+
+	<div class="buttons">
+	  <button id="enregistrement" type="submit" value="Connexion">Enregistrement</button>
+	  <button id="annuler" type="button" value="AnnulerEnregistrement" OnClick="annule(this)">Annuler</button>
+	</div>
+      </form>
+    </div>
+  </body>
+</html>

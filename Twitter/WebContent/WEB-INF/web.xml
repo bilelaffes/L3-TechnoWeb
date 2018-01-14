@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd"> 
+<web-app> 
+	
+	<display-name>Twitter</display-name> 
+	<servlet> 
+		<servlet-name>CreateUser</servlet-name> 
+		<servlet-class>services.servlets.CreateUserServlet</servlet-class> 
+	</servlet> 
+	
+	<servlet> 
+		<servlet-name>F</servlet-name> 
+		<servlet-class>services.servlets.FriendsRequestServlet</servlet-class> 
+	</servlet> 
+	
+	<servlet> 
+		<servlet-name>Login</servlet-name> 
+		<servlet-class>services.servlets.LoginServlet</servlet-class> 
+	</servlet> 
+	
+	<servlet> 
+		<servlet-name>Logout</servlet-name> 
+		<servlet-class>services.servlets.LogoutServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>AddFriends</servlet-name> 
+		<servlet-class>services.servlets.AddFriendsServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>RemoveFriends</servlet-name> 
+		<servlet-class>services.servlets.RemoveFriendsServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>ListFriends</servlet-name> 
+		<servlet-class>services.servlets.ListFriendServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>AddComment</servlet-name> 
+		<servlet-class>services.servlets.AddCommentServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>AddCommentList</servlet-name> 
+		<servlet-class>services.servlets.AddCommentListServlet</servlet-class> 
+	</servlet>
+	
+	
+	<servlet> 
+		<servlet-name>RemoveComment</servlet-name> 
+		<servlet-class>services.servlets.RemoveCommentServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>ListComment</servlet-name> 
+		<servlet-class>services.servlets.ListCommentServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>GetID</servlet-name> 
+		<servlet-class>services.servlets.GetIDServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>Search</servlet-name> 
+		<servlet-class>services.servlets.SearchServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>FriendRequest</servlet-name> 
+		<servlet-class>services.servlets.FriendRequestServlet</servlet-class> 
+	</servlet> 
+	
+	<servlet> 
+		<servlet-name>AcceptFriend</servlet-name> 
+		<servlet-class>services.servlets.AcceptFriendServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>RefuseFriend</servlet-name> 
+		<servlet-class>services.servlets.RefuseFriendServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>ListRequest</servlet-name> 
+		<servlet-class>services.servlets.ListRequestServlet</servlet-class> 
+	</servlet> 
+	
+	<servlet> 
+		<servlet-name>GetLogin</servlet-name> 
+		<servlet-class>services.servlets.GetLoginServlet</servlet-class> 
+	</servlet> 
+	
+	<servlet> 
+		<servlet-name>getCommentAll</servlet-name> 
+		<servlet-class>services.servlets.GetCommentAllServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>verifSessionActif</servlet-name> 
+		<servlet-class>services.servlets.VerifSessionActifServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>getUsersServlet</servlet-name> 
+		<servlet-class>services.servlets.GetUsersServlet</servlet-class> 
+	</servlet>
+	
+	<servlet> 
+		<servlet-name>PasseOublieServlet</servlet-name> 
+		<servlet-class>services.servlets.PasseOublieServlet</servlet-class> 
+	</servlet>
+	
+	<servlet-mapping> 
+		<servlet-name>CreateUser</servlet-name> 
+		<url-pattern>/createUser</url-pattern> 
+	</servlet-mapping> 
+	
+	
+	<servlet-mapping> 
+		<servlet-name>Login</servlet-name> 
+		<url-pattern>/login</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet-mapping> 
+		<servlet-name>F</servlet-name> 
+		<url-pattern>/fri</url-pattern> 
+	</servlet-mapping>  
+	
+	 
+	<servlet-mapping> 
+		<servlet-name>Logout</servlet-name> 
+		<url-pattern>/logout</url-pattern> 
+	</servlet-mapping> 
+	
+	 
+	<servlet-mapping> 
+		<servlet-name>AddFriends</servlet-name> 
+		<url-pattern>/addFriends</url-pattern> 
+	</servlet-mapping> 
+	 
+	<servlet-mapping> 
+		<servlet-name>RemoveFriends</servlet-name> 
+		<url-pattern>/removeFriends</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet-mapping> 
+		<servlet-name>ListFriends</servlet-name> 
+		<url-pattern>/listFriends</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet-mapping> 
+		<servlet-name>AddComment</servlet-name> 
+		<url-pattern>/addComment</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet-mapping> 
+		<servlet-name>AddCommentList</servlet-name> 
+		<url-pattern>/addCommentList</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet-mapping> 
+		<servlet-name>RemoveComment</servlet-name> 
+		<url-pattern>/removeComment</url-pattern> 
+	</servlet-mapping> 
+	
+	<servlet-mapping> 
+		<servlet-name>ListComment</servlet-name> 
+		<url-pattern>/listComment</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet-mapping> 
+		<servlet-name>GetID</servlet-name> 
+		<url-pattern>/getID</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet-mapping> 
+		<servlet-name>Search</servlet-name> 
+		<url-pattern>/search</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet-mapping> 
+		<servlet-name>FriendRequest</servlet-name> 
+		<url-pattern>/friendRequest</url-pattern> 
+	</servlet-mapping> 
+	
+	<servlet-mapping> 
+		<servlet-name>AcceptFriend</servlet-name> 
+		<url-pattern>/acceptFriend</url-pattern> 
+	</servlet-mapping> 
+	
+	<servlet-mapping> 
+		<servlet-name>RefuseFriend</servlet-name> 
+		<url-pattern>/refuseFriend</url-pattern> 
+	</servlet-mapping> 
+	
+	<servlet-mapping> 
+		<servlet-name>ListRequest</servlet-name> 
+		<url-pattern>/listRequest</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet-mapping> 
+		<servlet-name>GetLogin</servlet-name> 
+		<url-pattern>/getLogin</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet-mapping> 
+		<servlet-name>getCommentAll</servlet-name> 
+		<url-pattern>/getCommentAll</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet-mapping> 
+		<servlet-name>verifSessionActif</servlet-name> 
+		<url-pattern>/verifSession</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet-mapping> 
+		<servlet-name>getUsersServlet</servlet-name> 
+		<url-pattern>/getUsers</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet-mapping> 
+		<servlet-name>PasseOublieServlet</servlet-name> 
+		<url-pattern>/motDePasseOblie</url-pattern> 
+	</servlet-mapping>
+	
+</web-app>

@@ -1,0 +1,375 @@
+@font-face{
+   font-family: maPolice;
+   src: url(KaushanScript-Regular.otf);
+   
+}
+html {
+    background: url(fond.png) no-repeat fixed; 
+    // -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+
+body{
+	width:100%;
+	bottom:0%;
+}
+
+#logo{
+   
+    float:left;
+    position:fixed;
+}
+#logo > img{
+    width: 200px;
+    height: 195px;
+}
+
+h1{
+    color:black;
+    font-size:40px;
+    text-align:center;
+    margin-bottom:30px;
+    font-family: maPolice, cursive, sans-serif;
+
+}
+
+
+#conex{
+    margin-top:3%;
+    margin-bottom: 100%;
+    width:350px;
+    float:right;
+    margin-left:70%; 
+    position:fixed;
+}
+
+#passError{
+    display:inline;
+
+}
+
+.ids{
+    margin-top:30px;
+    margin-left:20px;
+    position:relative;
+}
+
+.ids > span{
+    font-size: 18px;
+    font-weight:bold;
+    font-family: maPolice, cursive, sans-serif;
+}
+
+.ids > a{
+    font-size: 14px;
+    font-weight:bold;
+    font-family: maPolice, cursive, sans-serif;
+    color: blue;
+}
+
+span[id="erreur"]{
+    font-size: 17px;
+    font-weight:bold;
+    font-family: maPolice, cursive, sans-serif;
+    margin-left: 4cm;
+    color: #B9121B;
+}
+
+.ids>input{
+    width: 30px;
+    height: 20px;
+    left:30%;
+    width:60%;
+    font-family: maPolice, cursive, sans-serif;
+    font-size: 17px;
+    position:absolute;
+}
+
+.buttons{
+
+    margin-top:30px;
+    margin-left:90px;
+    margin-bottom:40px;
+
+}
+button{
+    background-color: #2AD4FF;
+}
+button:hover{
+    background-color: #FF5599;
+}
+
+button[value="Connexion"]{
+    font-size: 18px;
+    font-family: maPolice, cursive, sans-serif;
+    
+    
+}
+
+button[value="AnnulerEnregistrement"],button[value="AnnulerSaisie"]{
+    font-size: 18px;
+    margin-left:10%;
+    font-family: maPolice, cursive, sans-serif;
+}
+
+
+
+#main{
+    width:400px; 
+    float:left;
+    margin-top: 10%;
+    margin-left:35%;
+    position:fixed;
+}
+
+
+.ids2{
+    margin-top:30px;
+    margin-left:20px;
+    position:relative;
+    font-size:18px;
+    font-weight:bold;
+    font-family: maPolice, cursive, sans-serif;
+}
+
+.ids2>input{
+    font-family: maPolice, cursive, sans-serif;
+    font-size: 17px;
+    left:30%;
+    width:60%;
+    position:absolute;
+}
+
+.pn{
+    display:inline-block;
+    margin-left:30px;
+    text-align:center;
+}
+
+.pn > span{
+    display:block;
+    font-size:18px;
+    font-weight:bold;
+    font-family: maPolice, cursive, sans-serif;
+    
+}
+
+.pn > input[type="text"]{
+    font-family: maPolice, cursive, sans-serif;
+    font-size: 18px;
+    width:150px;
+    margin-top:10px;
+}
+
+input[type=password]{
+ padding:3px;
+ border:1px solid #F5C5C5;
+ border-radius:5px;
+ width:200px;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+ background-color:#FFF3F3;
+}
+
+/************************PAGE PRINCIPALE********************************************/
+
+#logo2{
+    display: inline-block;
+    
+    
+}
+
+#logo2> img {
+    width: 120px;
+    height: 115px;
+   
+}
+
+#deconex{
+   display: inline-block;
+    float: right;
+    margin-right:15px;
+}
+
+#listAmi{
+	display: inline-block;
+    float: right;
+    margin-top: -2cm;
+    margin-left: 23cm;
+    margin-right: 10cm;
+    width: 100px;
+}
+
+#deconex > a {
+	font-size: 20px;
+	font-family: maPolice, cursive, sans-serif;
+	color: black;
+}
+
+#deconex > span {
+	font-size: 20px;
+	font-family: maPolice;
+	color: black;
+}
+
+#milieu {
+    width: 100%;
+   display: flex;
+}
+
+#addArea {
+    width:50%;
+    
+}
+
+
+#profil {
+    width: 636px;
+    height: 150px;
+    margin: auto;
+    
+
+}
+
+#profil > img {
+    width: 150px;
+    height: 145px;
+    position: absolute;
+    
+}
+
+#profil > span {
+    position: relative;
+    display: block;
+    margin-left: 40%;
+    padding-top:30px;
+    font-size: 33px;
+    font-family: maPolice, cursive, sans-serif;
+}
+
+#comment {
+    width: 100%;
+    font-family: maPolice, cursive, sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    border:outset;
+    border-color: black;
+   
+}
+button{
+    background-color: #2AD4FF;
+
+}
+button:hover{
+    background-color: #FF5599;
+}
+
+#commentArea > button{
+    font-family: maPolice, cursive, sans-serif;
+    font-size: 20px;
+    margin-left: 1%;    
+}
+
+#gauche {
+    background-color: #87CEFA;
+    width:25%;  
+}
+
+#search {
+    padding-top: 5%;
+    font-family: maPolice, cursive, sans-serif;
+    font-size: 20px;
+}
+
+#rechercher{
+    padding-top: 5%;
+    font-family: maPolice, cursive, sans-serif;
+    font-size: 25px;
+}
+
+#friends{
+    font-family: maPolice, cursive, sans-serif;
+    font-size: 13px;
+}
+
+#hachtag {
+    font-family: maPolice, cursive, sans-serif;
+    font-size: 15px;
+}
+
+#bouton >button {
+    font-family: maPolice, cursive, sans-serif;
+    font-size: 16px;
+}
+
+#filtrer{
+    font-family: maPolice, cursive, sans-serif;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+#filtrer >span{
+    display: block;
+}
+
+#block{
+    margin:auto;
+    font-family: maPolice, cursive, sans-serif;
+    font-size: 20px;
+    color:black;
+    
+}
+
+#droite {
+    background-color: #87CEFA;
+    width: 25%;  
+}
+
+#centrenotif {
+	font-family: maPolice, cursive, sans-serif;
+    font-size: 25px;
+    padding-left: 20px;
+
+}
+
+#texteAjout{
+	font-family:maPolice, cursive, sans-serif;
+	font-size:20px;
+}
+
+#boutonaccept{
+	font-family:maPolice, cursive, sans-serif;
+	font-size:20px;
+}
+
+#boutonrefuse{
+	font-family:maPolice, cursive, sans-serif;
+	font-size:20px;
+}
+
+#ami{
+	font-family:maPolice;
+	font-size:20px;
+}
+
+#pasami{
+	font-family:maPolice;
+	font-size:20px;
+}
+
+input[type=text]{
+ padding:3px;
+ border:1px solid #F5C5C5;
+ border-radius:5px;
+ width:200px;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+ background-color:#FFF3F3;
+}
+
+select{
+ padding:3px;
+ border:1px solid #F5C5C5;
+ border-radius:5px;
+ display:none;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+ background-color:#FFF3F3;
+}
